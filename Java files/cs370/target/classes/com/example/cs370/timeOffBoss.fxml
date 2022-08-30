@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cs370.timeOffBossController">
+   <children>
+      <ImageView fitHeight="411.0" fitWidth="612.0" layoutX="-7.0" layoutY="-7.0">
+         <image>
+            <Image url="@enter.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="welcomeText" layoutX="4.0" layoutY="30.0" prefHeight="48.0" prefWidth="581.0" text="TIME OFF REQUEST MANAGER">
+         <font>
+            <Font name="Arial Bold" size="37.0" />
+         </font>
+      </Label>
+      <Button fx:id="backB" layoutX="441.0" layoutY="357.0" mnemonicParsing="false" onAction="#backAction" prefHeight="36.0" prefWidth="126.0" text="Back">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label fx:id="clockstatus" layoutX="408.0" layoutY="183.0" prefHeight="112.0" prefWidth="179.0">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="historyText" editable="false" layoutX="14.0" layoutY="218.0" prefHeight="132.0" prefWidth="565.0" />
+      <Label layoutX="14.0" layoutY="114.0" text="Employee:">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="nameEmployee" layoutX="116.0" layoutY="114.0">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="147.0" text="Reason:">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="reasonRequest" layoutX="93.0" layoutY="147.0">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="approveB" layoutX="41.0" layoutY="188.0" mnemonicParsing="false" onAction="#approveDay" text="Approve" />
+      <Button fx:id="denyB" layoutX="116.0" layoutY="188.0" mnemonicParsing="false" onAction="#denyDay" prefHeight="25.0" prefWidth="62.0" text="Deny" />
+      <Button fx:id="aDays" layoutX="198.0" layoutY="188.0" mnemonicParsing="false" onAction="#approvedDays" text="Approved Days" />
+      <Button fx:id="dDays" layoutX="310.0" layoutY="188.0" mnemonicParsing="false" onAction="#declinedDays" text="Declined Days" />
+      <Button fx:id="pDays" layoutX="421.0" layoutY="188.0" mnemonicParsing="false" onAction="#pendingDays" text="Pending Days" />
+   </children>
+</AnchorPane>

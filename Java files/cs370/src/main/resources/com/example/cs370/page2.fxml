@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cs370.MainMenuController">
+   <children>
+      <ImageView fitHeight="411.0" fitWidth="612.0" layoutX="-7.0" layoutY="-7.0">
+         <image>
+            <Image url="@enter.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="cIn" layoutX="41.0" layoutY="126.0" mnemonicParsing="false" onAction="#clockin" prefHeight="36.0" prefWidth="126.0" text="Clock in">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font></Button>
+      <Label fx:id="welcomeText" layoutX="41.0" layoutY="30.0" text="WELCOME">
+         <font>
+            <Font name="Arial Bold" size="42.0" />
+         </font>
+      </Label>
+      <Button fx:id="cOut" layoutX="41.0" layoutY="308.0" mnemonicParsing="false" onAction="#clockout" prefHeight="36.0" prefWidth="126.0" text="Clock out">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="pButton" layoutX="215.0" layoutY="247.0" mnemonicParsing="false" onAction="#paystubScreen" prefHeight="36.0" prefWidth="126.0" text="Paystub">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="tOff" layoutX="215.0" layoutY="126.0" mnemonicParsing="false" onAction="#timeOffScreen" prefHeight="36.0" prefWidth="126.0" text="Time off Request">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="sButton" layoutX="215.0" layoutY="190.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="126.0" text="Schedule">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="lOut" layoutX="434.0" layoutY="336.0" mnemonicParsing="false" onAction="#logout" prefHeight="36.0" prefWidth="126.0" text="Log Out">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label fx:id="clockstatus" layoutX="408.0" layoutY="183.0" prefHeight="112.0" prefWidth="179.0">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Button fx:id="lunchB" layoutX="41.0" layoutY="247.0" mnemonicParsing="false" onAction="#lunchBack" prefHeight="36.0" prefWidth="126.0" text="Lunch Back">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="lunchI" layoutX="41.0" layoutY="190.0" mnemonicParsing="false" onAction="#lunchIn" prefHeight="36.0" prefWidth="126.0" text="Lunch In">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

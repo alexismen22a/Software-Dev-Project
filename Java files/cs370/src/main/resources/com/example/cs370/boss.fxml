@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cs370.BossController">
+   <children>
+      <ImageView fitHeight="411.0" fitWidth="613.0" layoutX="-6.0" layoutY="-5.0">
+         <image>
+            <Image url="@enter.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="40.0" layoutY="44.0" text="WELCOME">
+         <font>
+            <Font name="Arial Bold" size="38.0" />
+         </font>
+      </Label>
+      <Button fx:id="activeE" layoutX="40.0" layoutY="119.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="126.0" text="Active Employee">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="tOffR" layoutX="40.0" layoutY="300.0" mnemonicParsing="false" onAction="#timeOffScreen" prefHeight="36.0" prefWidth="126.0" text="Time off Request">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="gPaystub" layoutX="40.0" layoutY="175.0" mnemonicParsing="false" onAction="#bossPaystubScreen" prefHeight="36.0" prefWidth="126.0" text="Generate paystubs">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="wSchedule" layoutX="40.0" layoutY="238.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="126.0" text="Work Schedule">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="lOut" layoutX="460.0" layoutY="336.0" mnemonicParsing="false" onAction="#logout" prefHeight="36.0" prefWidth="126.0" text="Logout">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="tSEditor" layoutX="210.0" layoutY="119.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="126.0" text="Time Sheet Editor">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="aRE" layoutX="210.0" layoutY="175.0" mnemonicParsing="false" onAction="#addEmpScreen" prefHeight="36.0" prefWidth="126.0" text="Add Emp">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

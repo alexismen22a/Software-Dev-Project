@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cs370.bossPaystubController">
+   <children>
+      <ImageView fitHeight="411.0" fitWidth="612.0" layoutX="-7.0" layoutY="-7.0">
+         <image>
+            <Image url="@enter.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="welcomeText" layoutX="41.0" layoutY="30.0" text="PayStub Finder">
+         <font>
+            <Font name="Arial Bold" size="42.0" />
+         </font>
+      </Label>
+      <ListView fx:id="listV" layoutX="14.0" layoutY="95.0" prefHeight="271.0" prefWidth="149.0" />
+      <Label fx:id="nameInfo" layoutX="175.0" layoutY="101.0" prefHeight="39.0" prefWidth="430.0">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label fx:id="detailInfo" alignment="TOP_LEFT" layoutX="175.0" layoutY="157.0" prefHeight="115.0" prefWidth="411.0">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="netText" layoutX="175.0" layoutY="319.0" prefHeight="36.0" prefWidth="112.0" text="NET PAY:">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="totalPay" layoutX="292.0" layoutY="319.0" prefHeight="36.0" prefWidth="177.0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Button fx:id="back" layoutX="474.0" layoutY="366.0" mnemonicParsing="false" onAction="#backAction" prefHeight="25.0" prefWidth="112.0" text="Back" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cs370.empScheduleController">
+   <children>
+      <ImageView fitHeight="411.0" fitWidth="612.0" layoutX="-7.0" layoutY="-7.0">
+         <image>
+            <Image url="@enter.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="welcomeText" layoutX="18.0" layoutY="14.0" prefHeight="39.0" prefWidth="234.0" text="Week Schedule">
+         <font>
+            <Font name="Arial Bold" size="31.0" />
+         </font>
+      </Label>
+      <Button fx:id="backButton" layoutX="474.0" layoutY="366.0" mnemonicParsing="false" onAction="#goBack" prefHeight="25.0" prefWidth="112.0" text="Back" />
+      <DatePicker fx:id="datePicker" layoutX="135.0" layoutY="119.0" />
+      <Label layoutX="7.0" layoutY="144.0" prefHeight="32.0" prefWidth="801.0" text="SUNDAY     MONDAY   TUESDAY   WEDNESDAY  THURSDAY  FRIDAY     SATURDAY  ">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="7.0" layoutY="176.0" text="IN">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="91.0" layoutY="176.0" text="IN">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="171.0" layoutY="176.0" text="IN">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="252.0" layoutY="176.0" text="IN">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="438.0" layoutY="176.0" text="IN">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="351.0" layoutY="176.0" text="IN">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="515.0" layoutY="176.0" text="IN">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="inSunday" layoutX="7.0" layoutY="200.0" text="XX">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="inMonday" layoutX="91.0" layoutY="200.0" text="XX">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="inTuesday" layoutX="171.0" layoutY="200.0" text="XX">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="inWed" layoutX="252.0" layoutY="200.0" text="XX">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="inThursday" layoutX="351.0" layoutY="200.0" text="XX">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="inFriday" layoutX="438.0" layoutY="200.0" text="XX">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="inSaturday" layoutX="515.0" layoutY="200.0" text="XX">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="7.0" layoutY="227.0" text="OUT">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="91.0" layoutY="227.0" text="OUT">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="171.0" layoutY="227.0" text="OUT">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="252.0" layoutY="227.0" text="OUT">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="351.0" layoutY="227.0" text="OUT">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="440.0" layoutY="227.0" text="OUT">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="515.0" layoutY="227.0" text="OUT">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="outSunday" layoutX="7.0" layoutY="248.0" text="XX">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="outMonday" layoutX="91.0" layoutY="248.0" text="XX">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="outTuesday" layoutX="171.0" layoutY="248.0" text="XX">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="outWed" layoutX="252.0" layoutY="248.0" text="XX">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="outThursday" layoutX="353.0" layoutY="248.0" text="XX">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="outFriday" layoutX="438.0" layoutY="248.0" text="XX">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="outSaturday" layoutX="515.0" layoutY="248.0" text="XX">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="121.0" text="SELECT WEEK:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="errorLabel" layoutX="21.0" layoutY="322.0" text="ERROR LABEL" textFill="RED">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Button fx:id="searchButton" layoutX="327.0" layoutY="119.0" mnemonicParsing="false" onAction="#lookWeek" prefHeight="25.0" prefWidth="112.0" text="Search" />
+      <Label fx:id="dateSunday" layoutX="5.0" layoutY="277.0" text="XX/XX">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="dateMonday" layoutX="91.0" layoutY="277.0" text="XX/XX">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="dateTuesday" layoutX="172.0" layoutY="277.0" text="XX/XX">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="dateWed" layoutX="252.0" layoutY="277.0" text="XX/XX">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="dateThursday" layoutX="351.0" layoutY="277.0" text="XX/XX">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="dateFriday" layoutX="440.0" layoutY="277.0" text="XX/XX">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="dateSaturday" layoutX="516.0" layoutY="277.0" text="XX/XX">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

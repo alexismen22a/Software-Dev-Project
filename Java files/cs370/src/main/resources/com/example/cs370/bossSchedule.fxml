@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cs370.bossScheduleController">
+   <children>
+      <ImageView fitHeight="411.0" fitWidth="612.0" layoutX="-6.0" layoutY="-1.0">
+         <image>
+            <Image url="@enter.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="welcomeText" layoutX="18.0" layoutY="14.0" prefHeight="39.0" prefWidth="234.0" text="Week Schedule">
+         <font>
+            <Font name="Arial Bold" size="31.0" />
+         </font>
+      </Label>
+      <Button fx:id="backButton" layoutX="474.0" layoutY="366.0" mnemonicParsing="false" onAction="#goBack" prefHeight="25.0" prefWidth="112.0" text="Back" />
+      <DatePicker fx:id="datePicker" layoutX="300.0" layoutY="110.0" />
+      <ChoiceBox fx:id="empPicker" layoutX="14.0" layoutY="110.0" prefWidth="150.0" />
+      <Label layoutX="6.0" layoutY="147.0" prefHeight="32.0" prefWidth="801.0" text="SUNDAY     MONDAY   TUESDAY   WEDNESDAY  THURSDAY  FRIDAY     SATURDAY  ">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="sundayStart" layoutX="6.0" layoutY="179.0" prefHeight="25.0" prefWidth="71.0" />
+      <TextField fx:id="sundayEnd" layoutX="6.0" layoutY="215.0" prefHeight="25.0" prefWidth="71.0" />
+      <TextField fx:id="mondayStart" layoutX="89.0" layoutY="179.0" prefHeight="25.0" prefWidth="71.0" />
+      <TextField fx:id="mondayEnd" layoutX="89.0" layoutY="215.0" prefHeight="25.0" prefWidth="71.0" />
+      <TextField fx:id="tuesdayStart" layoutX="171.0" layoutY="179.0" prefHeight="25.0" prefWidth="71.0" />
+      <TextField fx:id="tuesdayEnd" layoutX="171.0" layoutY="215.0" prefHeight="25.0" prefWidth="71.0" />
+      <TextField fx:id="wedStart" layoutX="252.0" layoutY="179.0" prefHeight="25.0" prefWidth="84.0" />
+      <TextField fx:id="wedEnd" layoutX="252.0" layoutY="215.0" prefHeight="25.0" prefWidth="84.0" />
+      <TextField fx:id="thursdayStart" layoutX="349.0" layoutY="179.0" prefHeight="25.0" prefWidth="71.0" />
+      <TextField fx:id="thursdayEnd" layoutX="349.0" layoutY="215.0" prefHeight="25.0" prefWidth="71.0" />
+      <TextField fx:id="fridayStart" layoutX="432.0" layoutY="179.0" prefHeight="25.0" prefWidth="71.0" />
+      <TextField fx:id="fridayEnd" layoutX="432.0" layoutY="215.0" prefHeight="25.0" prefWidth="71.0" />
+      <TextField fx:id="saturdayStart" layoutX="515.0" layoutY="179.0" prefHeight="25.0" prefWidth="71.0" />
+      <TextField fx:id="saturdayEnd" layoutX="515.0" layoutY="215.0" prefHeight="25.0" prefWidth="71.0" />
+      <Button fx:id="searchButton" layoutX="192.0" layoutY="110.0" mnemonicParsing="false" onAction="#getData" text="Search" />
+      <Button fx:id="updateButton" layoutX="14.0" layoutY="291.0" mnemonicParsing="false" onAction="#updateSchedule" text="Update Schedule" />
+      <Label fx:id="sundayDate" layoutX="6.0" layoutY="248.0" prefHeight="32.0" prefWidth="71.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="mondayDate" layoutX="89.0" layoutY="248.0" prefHeight="32.0" prefWidth="71.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="tuesdayDate" layoutX="171.0" layoutY="248.0" prefHeight="32.0" prefWidth="71.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="wedDate" layoutX="252.0" layoutY="248.0" prefHeight="32.0" prefWidth="71.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="thursdayDate" layoutX="352.0" layoutY="248.0" prefHeight="32.0" prefWidth="71.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="fridayDate" layoutX="432.0" layoutY="248.0" prefHeight="32.0" prefWidth="71.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="saturdayDate" layoutX="515.0" layoutY="248.0" prefHeight="32.0" prefWidth="71.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="generateButton" layoutX="489.0" layoutY="110.0" mnemonicParsing="false" onAction="#generateWeek" text="Generate Week" />
+      <Label fx:id="errorLabel" layoutX="312.0" layoutY="62.0" prefHeight="39.0" prefWidth="259.0" textFill="#f20909">
+         <font>
+            <Font name="Arial Bold" size="31.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
